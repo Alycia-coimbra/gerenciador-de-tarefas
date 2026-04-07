@@ -1,0 +1,105 @@
+:root {
+    --primary: #513279;
+    --primary-dark: #2a1079f5;
+    --sidebar-bg: #1e293b;
+    --text-light: #e2e8f0;
+    --muted: #94a3b8;
+    --bg-light: #f8fafc81;
+}
+
+body {
+    background: #F8F7FF;
+    color: #0f172a;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.sidebar, .offcanvas {
+    background: var(--sidebar-bg);
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    padding: 0.9rem 1.25rem;
+    font-size: 0.98rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: rgba(255,255,255,0.08);
+    color: white !important;
+    border-left: 4px solid var(--primary);
+}
+
+.nav-link i {
+    width: 1.5rem;
+    text-align: center;
+    margin-right: 0.75rem;
+}
+
+.card {
+    border: none;
+    border-radius: 0.85rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.table th {
+    background: #f1f5f9;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    letter-spacing: 0.5px;
+    color: #64748b;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(94,96,206,0.06) !important;
+}
+
+.badge {
+    padding: 0.55em 0.95em;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+.table-responsive {
+    border-radius: 0.6rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Ajustes mobile */
+@media (max-width: 991.98px) {
+    main {
+        padding-top: 1rem !important;
+    }
+    .card {
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.92rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+}

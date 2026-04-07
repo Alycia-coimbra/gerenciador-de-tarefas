@@ -1,0 +1,22 @@
+/* Estilos específicos para página de perfil */
+
+.profile-header {
+    background: linear-gradient(90deg, #6062d8 0%, #3638b3 100%);
+    color: white;
+    padding: 2.5rem 2rem;
+    border-radius: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+.avatar-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+}
